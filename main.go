@@ -32,6 +32,7 @@ func killPod(namespace, podName string, clientset kubernetes.Interface) {
 	}
 }
 
+// podname_namespace_containername-092fb153cdeaafd5517de4e047d734ee226a0c0efb56ca0096085ddc37fcd50f.log
 func retiree(file string, clientset kubernetes.Interface) {
 	t, err := tail.TailFile(file, tail.Config{Follow: true})
 	if err != nil {
